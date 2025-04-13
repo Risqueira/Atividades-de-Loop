@@ -41,8 +41,9 @@ public class Teste1 {
     }
 
 }
-````
+```
 #questao 2
+```java
 package loopatividades1;
 
 /**
@@ -69,6 +70,7 @@ public class LoopAtividades1 {
     }
 
 }
+```
 #questao 3
 ```java
 package loopatividades1;
