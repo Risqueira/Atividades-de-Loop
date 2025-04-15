@@ -142,5 +142,54 @@ public class LoopAtividades1 {
 ```
 # Questao 5
 ```java
+package javaapplication80;
 
+import java.util.Scanner;
+
+/**
+ * 5. Escrever um algoritmo que leia uma quantidade desconhecida de números e
+ * conte quantos deles estão nos seguintes intervalos: [0,25], [26,50], [51,75]
+ * e [76,100]. A entrada de dados deve terminar quando for lido um número
+ * negativo.
+ *
+ * @author henrique
+ */
+public class JavaApplication80 {
+
+    public static void main(String[] args) {
+
+        int numero, entre025, entre2650, entre5175, entre76100;
+        Scanner ler = new Scanner(System.in);
+
+        entre025 = 0;
+        entre2650 = 0;
+        entre5175 = 0;
+        entre76100 = 0;
+        numero = 0;
+
+        while (numero >= 0) {
+            System.out.println("Digite um numero:");
+            numero = ler.nextInt();
+
+            if (numero >= 0 && numero <= 25) {
+                entre025++;
+            } else if (numero >= 26 && numero <= 50) {
+                entre2650++;
+            } else if (numero >= 51 && numero <= 75) {
+                entre5175++;
+            } else if (numero >= 76 && numero <= 100) {
+                entre76100++;
+            } else {
+                System.out.println("Intervalo não contabilizado apenas de 0 a 100.");
+            }
+
+        }
+        System.out.println("contabilizado de 0 a 25:" + entre025);
+        System.out.println("Contabilizado de 26 a 50:" + entre2650);
+        System.out.println("contabilizado de 51 a 75:" + entre5175);
+        System.out.println("contabilizado de 76 a 100:" + entre76100);
+
+    }
+
+}
 ```
